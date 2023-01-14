@@ -21,7 +21,7 @@ public ResponseEntity<Integer> someFunction(@PathVariable int id) throws Excepti
     }
     else
     {
-        throw new CustomExceptionHandler(ExceptionMessages.MYEXCEPTION,HttpStatus.NOT_FOUND);
+        throw new CustomExceptionHandler(ExceptionMessages.MY_EXCEPTION_NAME,HttpStatus.NOT_FOUND);
     }
 }
 ```
@@ -38,7 +38,7 @@ public ResponseEntity<Integer> someFunction(@PathVariable int id) throws Excepti
     }
     catch(Exception e)
     {
-        throw new CustomExceptionHandler(ExceptionMessages.MY_EXCEPTION,HttpStatus.NOT_FOUND);
+        throw new CustomExceptionHandler(ExceptionMessages.MY_EXCEPTION_NAME,HttpStatus.NOT_FOUND);
     }
 }
 ```
