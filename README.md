@@ -2,15 +2,14 @@
 
 ### Description
 
-This small pasckage is allowing developer to throw custom exception
-and throw this exception message inside response entity with selected status.
+This small package is allowing developers to throw custom exception and sending message inside response entity with selected status.
 
 ### How use it ?
-Fist define your message in 'ExceptionMessage' file like bellow:
+First define your message in 'ExceptionMessage' like bellow:
 
 `MY_EXCEPTION_NAME ("My exception description"),`
 
-then in your code you can throw this exception like bellow:
+then you can throw this exception in your code:
 ```java
 @GetMapping("/")
 public ResponseEntity<Integer> someFunction(@PathVariable int id) throws Exception{
