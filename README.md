@@ -1,4 +1,4 @@
-# Custom exception handler and response entity for exception 
+# Custom exception handler and response entity with custom exception message 
 
 ### Description
 
